@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+/* Common styles for desktop and mobile */
+.app {
+  background-image: url('./resources/background.jpg');
+  background-color: #ffffff; /* Replace with desired color if not using an image */
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Kanit', sans-serif;
+  font-size: 36px;
+  overflow-x: hidden;
+}
+
+.content-divider {
+  margin: 20px 0;
+}
+
+.block-divider {
+  margin: 10%;
+}
+
+.block-divider-menu {
+  margin: 20%;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover, a:active, a:focus-visible{
+  text-decoration: none;
+  border: 2px dashed #000000;
+  color: #6079d6;
+}
+
+#menu {
+  background-color: #b2ccf1;
+}
+
+.nav-link {
+  color: #000000 !important;
+  border: none;
+  width: fit-content;
+  transition: .3s;
+  font-size: 70% !important;
+}
+
+.nav-link:hover, .nav-link:active, .nav-link:focus-visible{
+  border: none;
+  color: #7b75f7 !important;
+}
+
+.nav-link:hover {
+  font-size: 80% !important;
+}
+
+a:hover, a:active, a:focus-visible{
+  text-decoration: none;
+  border: 2px dashed #000000;
+  color: #6079d6;
+}
+
+#organizers-logo img {
+  width: 5%;
+  height: auto;
+  margin: 10px;
+}
+
+#organizers-logo a {
+  border: none !important;
+}
+
+#banner-info, #organizers-logo{
+  margin-left: 10%;
+}
+
+#banner-info h1 {
+  font-size: 120%;
+  margin: 10px;
+}
+
+.carousel-container {
+  position: relative;
+}
+
+.image-carousel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-image {
+  max-width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  -webkit-box-shadow: 5px 4px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 5px 4px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 5px 4px 5px 0px rgba(0,0,0,0.75);
+  z-index: 0;
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  font-size: 24px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.prev-button:hover,
+.next-button:hover {
+  border: 1px dashed rgb(0, 0, 0);
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+.dots-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  border-radius: 50%;
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #333;
+}
+
+.dot:hover {
+  border: 2px dashed rgba(0, 0, 0, 0);
+}
+
+.list-content, .paragraph-content {
+  font-size: 50%;
+}
+
+.list-content {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px;
+  list-style-position: inside;
+}
+
+.paragraph-content {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px;
+}
+
+.img-content {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 5px 4px 5px 0px rgba(0,0,0,0.75);
+}
+
+#enrollment-form-content {
+  font-size: 70%;
+  margin: 20px;
+}
+
+#enrollment-form-content label[for='statute-acknowledge'] {
+  font-size: 70%;
+}
+
+#enrollment-form-content input{
+  margin: 10px;
+  border-radius: 49px;
+  border: none;
+  padding: 10px;
+  background-color: rgba(29, 26, 26, 0.5);
+  color: white;
+}
+
+#enrollment-form-content a:link, #enrollment-form-content a:visited {
+  color: #000000;
+  text-decoration: underline;
+}
+
+#enrollment-form-content a:hover {
+  color: rgb(103, 103, 103);
+  border: none;
+  text-decoration: underline;
+}
+
+#enrollment-form-content input::placeholder {
+  color: white;
+}
+
+.asterisk-required {
+  color: #ff1919;
+  display: inline-block;
+}
+
+#form-info p, #form-info h1 {
+  margin: 0px !important;
+}
+
+#form-info p {
+  font-size: 50%;
+}
+
+.form-text {
+  size: inherit;
+  text-align: center;
+}
+
+input[type=file] {
+  max-width: 100% !important;
+}
+
+input[type=file]::file-selector-button {
+  background-color: rgba(29, 26, 26, 0.237);
+  border-radius: 49px;
+  border: none;
+  color: #ffffff;
+  border: 0px;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+input[type=file]::file-selector-button:hover {
+  background-color: rgba(178, 204, 241, 0.73);
+  border: 1px dashed black !important;
+  color: #000000;
+}
+
+input[type=submit]:hover {
+  background-color: rgba(178, 204, 241, 0.73) !important;
+  border: 1px dashed black !important;
+  color: #000000 !important;
+}
+
+.form-response-text {
+  color: rgb(255, 38, 38);
+}
+
+/* menu toggle fix */
+@media (max-width: 768px) {
+  #menu-container {
+    margin: 0px;
+  }
+
+  #menu-p {
+    display: inline;
+  }
+}
+
+
+/* mobile devices */
+@media (max-width: 600px) {
+  .app {
+    font-size: 24px;
+  }
+
+  #organizers-logo img {
+    width: 10%;
+    height: 10%;
+  }
+
+  #banner-info h1 {
+    font-size: 120%;
+  }
+
+  h1 {
+    font-size: 120%;
+  }
+
+  .list-content, .paragraph-content {
+    font-size: 80%;
+  }
+
+  #enrollment-form-content {
+    font-size: 70%;
+  }
+}
