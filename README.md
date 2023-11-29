@@ -1,5 +1,5 @@
 # lodz-summer-school-web-app
-! Project is no longer under maintenance !
+# PROJECT IS OUT OF MAINTENANCE
 
 Simple React app for 2nd edition of Lodz Summer School
 
